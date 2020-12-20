@@ -106,6 +106,14 @@ export default function WelcomeUI() {
                 onChange={(event) => setHashUrl(event.target.value)}
               />
             </Grid>
+            <Grid item xs={11} lg={3}>
+              <Button
+                className={classes.button}
+                onClick={()=>setHashUrl("")}
+              >
+                Clear
+              </Button>
+            </Grid>
           </Grid>
         </Grid>
       </Paper>
